@@ -1,8 +1,9 @@
 {
   "name": "metgs-tool",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "业务上常用的工具函数",
-  "main": "index.js",
+  "main": "dist/metgs-tool.mjs",
+  "module": "dist/metgs-tool.umd.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vue-tsc --noEmit && vite build"

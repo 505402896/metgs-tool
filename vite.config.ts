@@ -4,7 +4,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'index.ts',
-      name: 'metgs-tool',
+      name: 'index',
     },
   },
 })
