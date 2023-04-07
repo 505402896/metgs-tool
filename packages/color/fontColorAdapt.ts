@@ -1,4 +1,6 @@
-interface fontColorAdaptOptions {
+import { hexToRgb, isHexColor, isRgbColor } from '@packages/color'
+
+export interface fontColorAdaptOptions {
   /**
    * @description 浅色字体颜色
    *
@@ -33,12 +35,11 @@ export function fontColorAdapt(
 ): string | undefined {
   const { tintFont = '#fff', deepFont = '#000', threshold = 190 } = options
 
-  // if (!/rgb/.test(bgColor)) {
-  //   bgColor = hexToRgb(bgColor)
-  // }
+  if (isRgbColor(bgColor) || isHexColor(bgColor)) {
+    if (isHexColor(bgColor)) {
+      bgColor = hexToRgb(bgColor)
+    }
 
-  // console.error('参数bgColor格式不正确,需要传入rgb|hex格式的颜色')
-  if (bgColor) {
     const result = bgColor.match(
       /\((?<r>\d{1,3}),(?<g>\d{1,3}),(?<b>\d{1,3})\)/
     )?.groups
@@ -54,6 +55,6 @@ export function fontColorAdapt(
       }
     }
   } else {
-    return tintFont
+    throw new TypeError('传入颜色格式不正确, 请传入rgb或者hex格式的颜色')
   }
 }
