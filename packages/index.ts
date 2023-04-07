@@ -1,1 +1,1 @@
-export * as color from './color'
+export * from './color'
