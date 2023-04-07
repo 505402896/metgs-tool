@@ -3,6 +3,7 @@ examples/
 packages/
 public/
 node_modules/
+docs/
 
 # Log 
 filesnpm-debug.log*
@@ -22,3 +23,6 @@ babel.config.js
 *.sln
 *.sw?
 .prettierrc
+
+.eslintignore
+.eslintrc.js

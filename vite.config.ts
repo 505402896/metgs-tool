@@ -4,8 +4,8 @@ import { resolve } from 'path'
 export default defineConfig({
   resolve: {
     alias: {
-      '@packages': resolve(__dirname, './packages')
-    }
+      '@packages': resolve(__dirname, './packages'),
+    },
   },
   build: {
     lib: {
