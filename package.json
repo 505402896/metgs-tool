@@ -1,6 +1,6 @@
 {
   "name": "metgs-tool",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "业务上常用的工具函数",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -40,5 +40,8 @@
     "vite": "^4.2.1",
     "vue": "^3.2.47",
     "vue-tsc": "^1.2.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
   }
 }
