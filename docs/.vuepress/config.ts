@@ -21,9 +21,9 @@ export default defineUserConfig({
         {
           text: '函数',
           children: [
-            { text: '颜色', link: '/guide/function/color/' },
-            { text: '时间', link: '/guide/function/time/' },
-            { text: '字符串', link: '/guide/function/string/' },
+            { text: '颜色', link: '/function/color/' },
+            { text: '时间', link: '/function/time/' },
+            { text: '字符串', link: '/function/string/' },
           ],
         },
       ],
