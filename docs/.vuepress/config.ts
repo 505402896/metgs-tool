@@ -24,6 +24,7 @@ export default defineUserConfig({
             { text: '颜色', link: '/function/color/' },
             { text: '时间', link: '/function/time/' },
             { text: '字符串', link: '/function/string/' },
+            { text: '风', link: '/function/wind/' },
           ],
         },
       ],

@@ -9,7 +9,7 @@
 | options | 可配置选项 | `object` | - | false |
 
 
-options
+options:
 | 属性名 | 说明 | 类型 | 默认值 | 是否必传 |
 | ----- | --- | --- | ------ | ------ |
 | tintFont | 浅色字体颜色 | `string` | #fff | false |
@@ -26,7 +26,9 @@ options
 ```ts
 import { fontColorAdapt } from 'metgs-tool'
 fontColorAdapt('#999') // => #fff
+
 fontColorAdapt('#999', { tintFont: '#333', deepFont: '#fff' }) // => #333
+
 fontColorAdapt('#999', { threshold: 100 }) // => #fff
 ```
 
@@ -91,6 +93,7 @@ hexToRgb('rgb(153,153,153)') // => #999999
 ```ts
 import { isHexColor } from 'metgs-tool'
 isHexColor('rgb(153,153,153)') // => false
+
 isHexColor('#999') // => true
 ```
 
@@ -113,5 +116,6 @@ isHexColor('#999') // => true
 ```ts
 import { isRgbColor } from 'metgs-tool'
 isRgbColor('rgb(153,153,153)') // => true
+
 isRgbColor('#999') // => false
 ```

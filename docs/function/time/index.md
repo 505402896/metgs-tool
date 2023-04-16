@@ -22,7 +22,18 @@
 ```ts
 import { timeRangeCompress } from 'metgs-tool'
 timeRangeCompress('2023-01-03', '2023-01-05') // => 2023年01月03日-05日
-timeRangeCompress('2023-01-03', '2023-01-05', 'YYYY年MM月DD日', '至') // => 2023年01月03日至05日
-timeRangeCompress('2023-01-03 09:20', '2023-01-03 20:00', 'YYYY年MM月DD日 HH时') // => 2023年01月03日 09时-20时
+
+timeRangeCompress(
+  '2023-01-03',
+  '2023-01-05',
+  'YYYY年MM月DD日',
+  '至'
+) // => 2023年01月03日至05日
+
+timeRangeCompress(
+  '2023-01-03 09:20',
+  '2023-01-03 20:00',
+  'YYYY年MM月DD日 HH时'
+) // => 2023年01月03日 09时-20时
 
 ```
