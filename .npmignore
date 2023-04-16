@@ -4,6 +4,7 @@ packages/
 public/
 node_modules/
 docs/
+scripts/
 
 # Log 
 filesnpm-debug.log*

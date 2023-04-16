@@ -4,7 +4,6 @@
   "description": "业务上常用的工具函数",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
-  "type": "module",
   "types": "./dist/types/packages/index.d.ts",
   "exports": {
     ".": {
@@ -16,7 +15,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build && vue-tsc -d",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "pub": "scripts/publish.sh"
   },
   "repository": {
     "type": "git",
