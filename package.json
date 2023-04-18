@@ -1,6 +1,6 @@
 {
   "name": "metgs-tool",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "业务上常用的工具函数",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
