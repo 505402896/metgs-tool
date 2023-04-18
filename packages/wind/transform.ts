@@ -42,11 +42,11 @@ export function getWindDS(u: number, v: number): windObj {
 
 /**
  * @description 根据度数获取风向中文名
- * @param {Number} wd 风向
+ * @param {Number|String} wd 风向
  * @returns {String} 风向中文名
  */
-export function getWindDirectionName(wd: number): string {
-  wd = wd % 360
+export function getWindDirectionName(wd: number | string): string {
+  const value = Number(wd) % 360
 
   const windDirectDict = [
     { wdMin: 0, wdMax: 22.5, name: '北风' },
@@ -60,16 +60,18 @@ export function getWindDirectionName(wd: number): string {
     { wdMin: 337.5, wdMax: 360, name: '北风' },
   ]
 
-  const target = windDirectDict.find((v) => wd >= v.wdMin && wd < v.wdMax)
+  const target = windDirectDict.find((v) => value >= v.wdMin && value < v.wdMax)
   return target?.name || ''
 }
 
 /**
  * @description 根据风速返回对应的风级
- * @param {Number} ws 风速
+ * @param {Number|String} ws 风速
  * @returns {Number} 风级
  */
-export function getWindLevel(ws: number): number {
+export function getWindLevel(ws: number | string): number {
+  const speed = Number(ws)
+
   const levelDict = [
     { wsMin: 0, wsMax: 0.2, level: 0 },
     { wsMin: 0.2, wsMax: 1.5, level: 1 },
@@ -93,9 +95,9 @@ export function getWindLevel(ws: number): number {
 
   const first = levelDict[0]
   const last = levelDict[levelDict.length - 1]
-  if (ws === first.wsMin) return first.level
-  if (ws >= last.wsMax) return last.level
+  if (speed === first.wsMin) return first.level
+  if (speed >= last.wsMax) return last.level
 
-  const target = levelDict.find((v) => ws > v.wsMin && ws <= v.wsMax)
+  const target = levelDict.find((v) => speed > v.wsMin && speed <= v.wsMax)
   return target?.level || 0
 }
