@@ -35,7 +35,7 @@ getWindDS(-20, -3) // => { ws: 20.223748416156685, wd: 261.46923439005184 }
 
 | 属性名 | 说明 | 类型 | 默认值 | 是否必传 |
 | ----- | --- | --- | ------ | ------ |
-| wd | 风向 | `number` | - | true |
+| wd | 风向 | `number\|string` | - | true |
 
 **返回**
 
@@ -47,6 +47,7 @@ getWindDS(-20, -3) // => { ws: 20.223748416156685, wd: 261.46923439005184 }
 ```ts
 import { getWindDirectionName } from 'metgs-tool'
 getWindDirectionName(30) // => 东北风
+getWindDirectionName('30') // => 东北风
 ```
 
 ## getWindLevel
@@ -56,7 +57,7 @@ getWindDirectionName(30) // => 东北风
 
 | 属性名 | 说明 | 类型 | 默认值 | 是否必传 |
 | ----- | --- | --- | ------ | ------ |
-| ws | 风速 | `number` | - | true |
+| ws | 风速 | `number\|string` | - | true |
 
 **返回**
 
@@ -68,4 +69,5 @@ getWindDirectionName(30) // => 东北风
 ```ts
 import { getWindLevel } from 'metgs-tool'
 getWindLevel(25) // => 10
+getWindLevel('25') // => 10
 ```
