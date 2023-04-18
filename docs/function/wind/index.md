@@ -28,7 +28,7 @@ import { getWindDS } from 'metgs-tool'
 getWindDS(-20, -3) // => { ws: 20.223748416156685, wd: 261.46923439005184 }
 ```
 
-## getWindDirectionCn
+## getWindDirectionName
 根据度数获取风向中文名
 
 **参数**
@@ -45,6 +45,27 @@ getWindDS(-20, -3) // => { ws: 20.223748416156685, wd: 261.46923439005184 }
 
 **例子**
 ```ts
-import { getWindDirectionCn } from 'metgs-tool'
-getWindDirectionCn(30) // => 东北风
+import { getWindDirectionName } from 'metgs-tool'
+getWindDirectionName(30) // => 东北风
+```
+
+## getWindLevel
+根据风速返回对应的风级
+
+**参数**
+
+| 属性名 | 说明 | 类型 | 默认值 | 是否必传 |
+| ----- | --- | --- | ------ | ------ |
+| ws | 风速 | `number` | - | true |
+
+**返回**
+
+| 属性名 | 说明 | 类型 |
+| ----- | --- | --- |
+| level | 风级 | `number` |
+
+**例子**
+```ts
+import { getWindLevel } from 'metgs-tool'
+getWindLevel(25) // => 10
 ```
