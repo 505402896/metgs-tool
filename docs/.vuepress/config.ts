@@ -16,16 +16,24 @@ export default defineUserConfig({
     navbar: [{ text: '首页', link: '/guide/introduction/' }],
     sidebar: {
       '/': [
-        { text: '简介', link: '/guide/introduction/' },
-        { text: '快速上手', link: '/guide/getting-started/' },
+        { text: 'Introduce', link: '/guide/introduction/' },
+        { text: 'Get Started', link: '/guide/getting-started/' },
         {
-          text: '函数',
+          text: 'Functions',
           children: [
-            { text: '颜色', link: '/function/color/' },
-            { text: '时间', link: '/function/time/' },
-            { text: '字符串', link: '/function/string/' },
-            { text: '风', link: '/function/wind/' },
+            { text: 'Color', link: '/function/color/' },
+            { text: 'Time', link: '/function/time/' },
+            { text: 'String', link: '/function/string/' },
+            { text: 'Wind', link: '/function/wind/' },
           ],
+        },
+        {
+          text: 'Hooks',
+          children: [],
+        },
+        {
+          text: 'Components',
+          children: [],
         },
       ],
     },
