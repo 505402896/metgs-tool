@@ -1,4 +1,4 @@
-import { removeSpace } from '@packages/string'
+import { removeSpace } from '@packages/functions/string'
 
 /**
  * @description 验证是否为16进制颜色

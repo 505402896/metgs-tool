@@ -1,4 +1,4 @@
-import { hexToRgb, isHexColor, isRgbColor } from '@packages/color'
+import { hexToRgb, isHexColor, isRgbColor } from '@packages/functions/color'
 
 export interface fontColorAdaptOptions {
   /**

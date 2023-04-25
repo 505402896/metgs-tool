@@ -21,10 +21,10 @@ export default defineUserConfig({
         {
           text: 'Functions',
           children: [
-            { text: 'Color', link: '/function/color/' },
-            { text: 'Time', link: '/function/time/' },
-            { text: 'String', link: '/function/string/' },
-            { text: 'Wind', link: '/function/wind/' },
+            { text: 'Color', link: '/functions/color/' },
+            { text: 'Time', link: '/functions/time/' },
+            { text: 'String', link: '/functions/string/' },
+            { text: 'Wind', link: '/functions/wind/' },
           ],
         },
         {

@@ -1,4 +1,4 @@
-import { isHexColor, isRgbColor } from '@packages/color'
+import { isHexColor, isRgbColor } from '@packages/functions/color'
 
 /**
  * @description 16进制颜色转rgb
