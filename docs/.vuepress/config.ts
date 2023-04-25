@@ -25,6 +25,7 @@ export default defineUserConfig({
             { text: 'Time', link: '/functions/time/' },
             { text: 'String', link: '/functions/string/' },
             { text: 'Wind', link: '/functions/wind/' },
+            { text: 'Number', link: '/functions/number/' },
           ],
         },
         {
