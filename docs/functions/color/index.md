@@ -1,5 +1,7 @@
 # color 颜色
 ## fontColorAdapt
+**Description**
+
 根据背景颜色的冷暖，计算文本在不同背景下的颜色
 
 **Params**
@@ -33,6 +35,8 @@ fontColorAdapt('#999', { threshold: 100 }) // => #fff
 ```
 
 ## hexToRgb
+**Description**
+
 hex颜色转rgb
 
 **Params**
@@ -54,6 +58,8 @@ hexToRgb('#999') // => rgb(153,153,153)
 ```
 
 ## rgbToHex
+**Description**
+
 rgb颜色转hex
 
 **Params**
@@ -75,6 +81,8 @@ hexToRgb('rgb(153,153,153)') // => #999999
 ```
 
 ## isHexColor
+**Description**
+
 验证颜色格式是否为hex
 
 **Params**
@@ -98,6 +106,8 @@ isHexColor('#999') // => true
 ```
 
 ## isRgbColor
+**Description**
+
 验证颜色格式是否为rgb
 
 **Params**

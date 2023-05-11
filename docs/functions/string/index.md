@@ -1,6 +1,8 @@
 # string 字符串
 
 ## removeSpace
+**Description**
+
 去除字符串内所有空格
 
 **Params**

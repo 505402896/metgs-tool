@@ -1,6 +1,8 @@
 # number 数字
 
 ## parseNumber
+**Description**
+
 数字转换，小数位四舍五入
 
 **Params**

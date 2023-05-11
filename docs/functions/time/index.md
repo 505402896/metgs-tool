@@ -1,6 +1,8 @@
 # time 时间
 
 ## timeRangeCompress
+**Description**
+
 将给定的时间区间压缩重复部分
 
 **Params**

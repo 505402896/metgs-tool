@@ -1,6 +1,8 @@
 # wind 风
 
 ## getWindDS
+**Description**
+
 根据风速在水平、垂直方向上的分量计算风速和风向
 
 **Params**
@@ -29,6 +31,8 @@ getWindDS(-20, -3) // => { ws: 20.223748416156685, wd: 261.46923439005184 }
 ```
 
 ## getWindDirectionName
+**Description**
+
 根据度数获取风向中文名
 
 **Params**
@@ -51,6 +55,8 @@ getWindDirectionName('30') // => 东北风
 ```
 
 ## getWindLevel
+**Description**
+
 根据风速返回对应的风级
 
 **Params**
