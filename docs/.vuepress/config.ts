@@ -2,7 +2,7 @@
  * @Author: wzj@metgs.com
  * @Date: 2023-04-11 17:34:50
  * @LastEditors: wzj@metgs.com
- * @LastEditTime: 2023-04-12 17:48:49
+ * @LastEditTime: 2023-05-11 17:39:14
  * @Description: ...
  */
 import { defineUserConfig, defaultTheme } from 'vuepress'
@@ -26,6 +26,7 @@ export default defineUserConfig({
             { text: 'String', link: '/functions/string/' },
             { text: 'Wind', link: '/functions/wind/' },
             { text: 'Number', link: '/functions/number/' },
+            { text: 'Data', link: '/functions/data/' },
           ],
         },
         {
