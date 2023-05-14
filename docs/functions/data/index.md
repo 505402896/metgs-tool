@@ -48,7 +48,7 @@ export enum DataType {
 **Params**
 | 属性名 | 说明 | 类型 | 默认值 | 是否必传 |
 | ----- | --- | --- | ------ | ------ |
-| data | 数据源 | `CloneType` | - | true |
+| data | 数据源 | `DataType` | - | true |
 | cache | 缓存队列，避免循环引用 | WeakMap | weakMap | false |
 
 **Returns**
