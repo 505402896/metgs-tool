@@ -56,15 +56,11 @@ deepCopy([1, 2, { c: 3 }]) // => [1, 2, { c: 3 }]
 export enum CloneType {
   Object = 'Object',
   Array = 'Array',
-  Date = 'Date',
-  RegExp = 'RegExp',
-  Function = 'Function',
   String = 'String',
   Number = 'Number',
   Boolean = 'Boolean',
   Undefined = 'Undefined',
   Null = 'Null',
-  Symbol = 'Symbol',
   Set = 'Set',
   Map = 'Map',
 }
