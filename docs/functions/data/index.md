@@ -7,7 +7,7 @@
 **Params**
 | 属性名 | 说明 | 类型 | 默认值 | 是否必传 |
 | ----- | --- | --- | ------ | ------ |
-| data | 数据源 | `any` | - | true |
+| data | 数据源 | `DataType` | - | true |
 
 **Returns**
 
@@ -25,6 +25,21 @@ isEmpty({ a: 3 }) // => false
 isEmpty([]) // => true
 ```
 
+**Type Declarations**
+
+```ts
+export enum DataType {
+  Object = 'Object',
+  Array = 'Array',
+  String = 'String',
+  Number = 'Number',
+  Undefined = 'Undefined',
+  Null = 'Null',
+  Set = 'Set',
+  Map = 'Map',
+}
+```
+
 ## deepClone
 **Description**
 
@@ -40,7 +55,7 @@ isEmpty([]) // => true
 
 | 属性名 | 说明 | 类型 |
 | ----- | --- | --- |
-| result | 克隆数据 | `CloneType` |
+| result | 克隆数据 | `DataType` |
 
 **Usage**
 ```ts
@@ -53,7 +68,7 @@ deepCopy([1, 2, { c: 3 }]) // => [1, 2, { c: 3 }]
 **Type Declarations**
 
 ```ts
-export enum CloneType {
+export enum DataType {
   Object = 'Object',
   Array = 'Array',
   String = 'String',
